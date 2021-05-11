@@ -36,4 +36,4 @@ echo "REMINDER: install fonts before setting up powerlevel10k\n"
 
 echo "LOGOUT AND COME BACK\n"
 
-alias maclogout="osascript -e 'tell application \"System Events\" to log out'" && sleep 3; maclogout
+alias maclogout="osascript -e 'tell application \"System Events\" to log out'" ; sleep 3; maclogout
