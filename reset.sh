@@ -1,7 +1,8 @@
 #!/bin/zsh
 
 # vimrc
-cp ./etc/vimrc.txt ~/.vimrc
+cp ./etc/vimrc.txt $HOME/.vimrc
+cp ./etc/gitconfig.txt $HOME/.gitconfig
 
 # ssh-keygen
 echo "REMINDER: install fonts before setting up powerlevel10k\n"
@@ -19,7 +20,7 @@ cp ./etc/ssh_config.txt $HOME/.ssh/config
 eval "$(ssh-agent -s)" ; ssh-add $HOME/.ssh/id_rsa_42intra ; ssh-add $HOME/.ssh/id_rsa_github
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
 
 # zsh-syntax-highlight
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh-syntax-highlighting
