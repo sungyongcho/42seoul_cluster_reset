@@ -31,6 +31,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 sed -i "" "s|robbyrussell|powerlevel10k/powerlevel10k|g" $HOME/.zshrc
 
+# bluetooth icon
+open '/System/Library/CoreServices/Menu Extras/Bluetooth.menu' >> $HOME/.zshrc
+
+#keyboard language
 echo "REMINDER: install fonts before setting up powerlevel10k\n"
 
 echo "LOGOUT AND COME BACK\n"
