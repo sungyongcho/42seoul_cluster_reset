@@ -11,9 +11,9 @@ open ./fonts
 
 mkdir $HOME/.ssh
 echo "ssh-keygen for github\n"
-ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "/Users/sucho/.ssh/id_rsa_github"
+ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "$HOME/.ssh/id_rsa_github"
 echo "ssh-keygen for 42intra\n"
-ssh-keygen -t rsa -C "sucho@student.42seoul.kr" -f "/Users/sucho/.ssh/id_rsa_42intra"
+ssh-keygen -t rsa -C "$USER@student.42seoul.kr" -f "$HOME/.ssh/id_rsa_42intra"
 
 cp ./etc/ssh_config.txt $HOME/.ssh/config
 

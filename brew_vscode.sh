@@ -28,3 +28,5 @@ cat $HOME/.ssh/id_rsa_42intra.pub
 
 echo 'export PATH="$PATH:/Users/sucho/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >> $HOME/.zshrc
 
+# vscode key repeat
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
