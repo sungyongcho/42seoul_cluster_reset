@@ -1,7 +1,7 @@
 
 #!/bin/zsh
 
-rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH="$HOME/.brew/bin:$PATH"' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
+rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH="$PATH:$HOME/.brew/bin"' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
 
 #visual studio code
 brew install visual-studio-code --appdir=~/Applications/
@@ -17,7 +17,6 @@ code --install-extension vscodevim.vim
 #copy and paster vscode settings
 cp ./vscode_settings/settings.json $HOME/Library/Application\ Support/Code/User/
 cp ./vscode_settings/keybindings.json $HOME/Library/Application\ Support/Code/User/
-
 
 echo "setting up brew & vscode in ~/Applications/ is DONE\n"
 
