@@ -17,7 +17,11 @@ ssh-keygen -t rsa -C "$USER@student.42seoul.kr" -f "$HOME/.ssh/id_rsa_42intra"
 
 cp ./etc/ssh_config.txt $HOME/.ssh/config
 
-eval "$(ssh-agent -s)" ; ssh-add $HOME/.ssh/id_rsa_42intra ; ssh-add $HOME/.ssh/id_rsa_github
+eval "$(ssh-agent -s)" 
+
+ssh-add $HOME/.ssh/id_rsa_42intra 
+
+ssh-add $HOME/.ssh/id_rsa_github
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
