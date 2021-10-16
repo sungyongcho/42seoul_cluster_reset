@@ -6,11 +6,25 @@ rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME
 #visual studio code
 brew install visual-studio-code --appdir=~/Applications/
 
+code --install-extension BazelBuild.vscode-bazel
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension evilcat.norminette-42
+code --install-extension frfreyCanonicalClassCPP.canonicalclasscpp
+code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension kube.42header
 code --install-extension MariusvanWijk-JoppeKoers.codam-norminette-3
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.vscode-typescript-next
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension rangav.vscode-thunder-client
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension vscodevim.vim
 
