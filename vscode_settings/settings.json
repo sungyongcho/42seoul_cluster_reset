@@ -32,6 +32,9 @@
   "editor.insertSpaces": false,
   "editor.renderWhitespace": "all",
   "editor.mouseWheelZoom": false, // 필요할때 마다 바꾸기
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   //   "editor.formatOnSave": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
